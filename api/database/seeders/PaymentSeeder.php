@@ -15,19 +15,22 @@ class PaymentSeeder extends Seeder
     public function run(): void
     {
         DB::table('payment')->insert([
+            'id_usuario' => 1,
             'metodo' => 'Visa',
             'numero_tarjeta' => '4548812049400004',
-            'monto' => 100
+
         ]);
         DB::table('payment')->insert([
+            'id_usuario' => 1,
             'metodo' => 'SPEI',
             'numero_tarjeta' => '4548812049426334',
-            'monto' => 900
+
         ]);
         DB::table('payment')->insert([
+            'id_usuario' => 1,
             'metodo' => 'Oxxo',
             'numero_tarjeta' => '4551212049400004',
-            'monto' => 300
+
         ]);
     }
 }

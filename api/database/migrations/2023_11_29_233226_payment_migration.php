@@ -13,9 +13,10 @@ return new class extends Migration
     {
         Schema::create('payment', function (Blueprint $table) {
             $table->increments('id_payment');
+            $table->integer('id_usuario')->unsigned();
+            $table->foreign('id_usuario')->references('id')->on('users');
             $table->string('metodo');
             $table->string('numero_tarjeta');
-            $table->double('monto');
             $table->timestamps();
         });
     }
