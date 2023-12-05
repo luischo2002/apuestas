@@ -1,6 +1,7 @@
 <template>
   <HeaderComponent />
   <div class="container">
+    <RetiroModalComponent/>
     <h2>Apuesta y gana</h2>
     <table class="table table-bordered">
       <thead>
@@ -169,13 +170,14 @@
 
 <script>
 import HeaderComponent from './HeaderComponent.vue';
+import RetiroModalComponent from './RetiroModalComponent.vue';
 
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
   },
-  components: { HeaderComponent }
+  components: { HeaderComponent , RetiroModalComponent }
 }
 </script>
 

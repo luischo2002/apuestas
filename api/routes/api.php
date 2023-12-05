@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ApuestasController;
 use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -22,3 +23,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::resource('apuestas', ApuestasController::class);
 Route::resource('payment', PaymentController::class);
+Route::resource('users', UserController::class);
