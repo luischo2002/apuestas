@@ -1,6 +1,7 @@
 <template>
+ 
+  <div class="container"> 
   <HeaderComponent />
-  <div class="container">
     <RetiroModalComponent/>
     <h2>Apuesta y gana</h2>
     <table class="table table-bordered">
