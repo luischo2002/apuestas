@@ -15,13 +15,13 @@
       </thead>
       <tbody>
         <tr>
-          <td>Equipo 1 <br> Equipo 2</td>
+          <td>Cruz Azul <br> Juventus</td>
           <td>
-            <button type="button" class="btn btn-danger">Equipo 1</button>
+            <button type="button" class="btn btn-danger">Cruz Azul</button>
             <span style="margin-right: 10px;"></span>
             <button type="button" class="btn btn-danger">Empate</button>
             <span style="margin-right: 10px;"></span>
-            <button type="button" class="btn btn-danger">Equipo 2</button>
+            <button type="button" class="btn btn-danger">Juventus</button>
           </td>
 
           <td>
