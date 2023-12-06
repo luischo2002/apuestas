@@ -1,14 +1,14 @@
 <template>
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
+<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalRetiro">
+  Retiro
 </button>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="modalRetiro" tabindex="-1" aria-labelledby="modalRetiro" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Retiro de fondos</h1>
+        <h1 class="modal-title fs-5" id="modalRetiro">Retiro de fondos</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
