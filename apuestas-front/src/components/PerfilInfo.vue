@@ -1,13 +1,59 @@
 <template>
-    <a></a>
+<HeaderComponent />
+<div class="d-flex justify-content-center aling-items-center vh-150 bg-danger p-4" >
+        <div class='bg-white m-5 p-5 rounded-5 justify-content-center aling-items-center' style="width:23rem; height:32rem">
+            <div class='d-flex justify-content-center'>
+                <img src="../assets/img/defaultuser.png" alt="A" style="height: 7rem" />
+            </div>
+            <h1 class="text-center fw-bold p-3">Mi Perfil</h1>
+            <div class="p-2">
+                <label for="">Nombre:</label>
+                <p>Administrador</p>
+                <!--
+                <input style="border:none; border-bottom: 2px black solid;border-radius:5;
+                border-top-left-radius:10px;border-top-right-radius:10px;" 
+                v-on:keyup="error=false" v-model="txtEmail" type="email" 
+                class="form-control bg-ligth input-group-text">
+                -->
+            </div>
+            <div class="p-2">
+                <label for="">Correo electronico:</label>
+                <p>admin</p>
+                <!--
+                <input style="border:none;  border-bottom: 2px black solid;border-radius:5; 
+                border-top-left-radius:10px;border-top-right-radius:10px;" 
+                v-on:keyup="error=false" v-model="txtPassword" type="password" 
+                class="form-control bg-ligth input-group-text">
+                -->
+            </div>
+            <div class="p-2">
+                <label for="">Num. Tarjeta:</label>
+                <p>123456789</p>
+                <!--
+                <input style="border:none; border-bottom: 2px black solid;border-radius:5;
+                border-top-left-radius:10px;border-top-right-radius:10px;" 
+                v-on:keyup="error=false" v-model="txtEmail" type="email" 
+                class="form-control bg-ligth input-group-text">
+                -->
+            </div>
+            
+        </div>
+
+    </div>
 </template>
 
 <script>
+
+import HeaderComponent from './HeaderComponent.vue';
+
 export default {
   name: 'PerfilInfo',
   props: {
     msg: String
   },
+  components: { 
+    HeaderComponent,
+    }
   }
 </script>
 

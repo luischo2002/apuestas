@@ -14,7 +14,7 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link button btn-primary" aria-current="page" href="#">Entrar</a>
+            <a class="nav-link button btn-primary" aria-current="page" @click="goHome">Entrar</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Registrarse</a>
@@ -61,6 +61,9 @@
     methods:{
             goPerfil(){
                 this.$router.push('/perfil')
+            },
+            goHome(){
+                this.$router.push('/home')
             }
         }
 }
