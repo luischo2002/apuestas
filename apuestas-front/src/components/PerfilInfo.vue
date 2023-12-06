@@ -9,32 +9,17 @@
             <div class="p-2">
                 <label for="">Nombre:</label>
                 <p>Administrador</p>
-                <!--
-                <input style="border:none; border-bottom: 2px black solid;border-radius:5;
-                border-top-left-radius:10px;border-top-right-radius:10px;" 
-                v-on:keyup="error=false" v-model="txtEmail" type="email" 
-                class="form-control bg-ligth input-group-text">
-                -->
+
             </div>
             <div class="p-2">
                 <label for="">Correo electronico:</label>
                 <p>admin</p>
-                <!--
-                <input style="border:none;  border-bottom: 2px black solid;border-radius:5; 
-                border-top-left-radius:10px;border-top-right-radius:10px;" 
-                v-on:keyup="error=false" v-model="txtPassword" type="password" 
-                class="form-control bg-ligth input-group-text">
-                -->
+
             </div>
             <div class="p-2">
                 <label for="">Num. Tarjeta:</label>
                 <p>123456789</p>
-                <!--
-                <input style="border:none; border-bottom: 2px black solid;border-radius:5;
-                border-top-left-radius:10px;border-top-right-radius:10px;" 
-                v-on:keyup="error=false" v-model="txtEmail" type="email" 
-                class="form-control bg-ligth input-group-text">
-                -->
+                
             </div>
             
         </div>
