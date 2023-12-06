@@ -14,13 +14,13 @@
       </thead>
       <tbody>
         <tr>
-          <td>Perros <br> Equipo 2</td>
+          <td>Cruz Azul <br> Juventus</td>
           <td>
-            <button type="button" class="btn btn-danger">Equipo 1</button>
+            <button type="button" class="btn btn-danger">Cruz Azul</button>
             <span style="margin-right: 10px;"></span>
             <button type="button" class="btn btn-danger">Empate</button>
             <span style="margin-right: 10px;"></span>
-            <button type="button" class="btn btn-danger">Equipo 2</button>
+            <button type="button" class="btn btn-danger">Juventus</button>
           </td>
 
           <td>
@@ -29,13 +29,13 @@
 
         </tr>
         <tr>
-          <td>Equipo 1 <br> Equipo 2</td>
+          <td>Real Madrid <br> Atlas</td>
           <td>
-            <button type="button" class="btn btn-danger">Equipo 1</button>
+            <button type="button" class="btn btn-danger">Real Madrid</button>
             <span style="margin-right: 10px;"></span>
             <button type="button" class="btn btn-danger">Empate</button>
             <span style="margin-right: 10px;"></span>
-            <button type="button" class="btn btn-danger">Equipo 2</button>
+            <button type="button" class="btn btn-danger">Atlas</button>
           </td>
 
           <td>
@@ -44,13 +44,13 @@
 
         </tr>
         <tr>
-          <td>Equipo 1 <br> Equipo 2</td>
+          <td>PSG <br> FC Juárez</td>
           <td>
-            <button type="button" class="btn btn-danger">Equipo 1</button>
+            <button type="button" class="btn btn-danger">PSG</button>
             <span style="margin-right: 10px;"></span>
             <button type="button" class="btn btn-danger">Empate</button>
             <span style="margin-right: 10px;"></span>
-            <button type="button" class="btn btn-danger">Equipo 2</button>
+            <button type="button" class="btn btn-danger">FC Juárez</button>
           </td>
 
           <td>
@@ -59,13 +59,13 @@
 
         </tr>
         <tr>
-          <td>Equipo 1 <br> Equipo 2</td>
+          <td>Liverpool <br> América</td>
           <td>
-            <button type="button" class="btn btn-danger">Equipo 1</button>
+            <button type="button" class="btn btn-danger">Liverpool</button>
             <span style="margin-right: 10px;"></span>
             <button type="button" class="btn btn-danger">Empate</button>
             <span style="margin-right: 10px;"></span>
-            <button type="button" class="btn btn-danger">Equipo 2</button>
+            <button type="button" class="btn btn-danger">América</button>
           </td>
 
           <td>
@@ -74,13 +74,13 @@
 
         </tr>
         <tr>
-          <td>Equipo 1 <br> Equipo 2</td>
+          <td>Inter Miami <br> Pumas UNAM</td>
           <td>
-            <button type="button" class="btn btn-danger">Equipo 1</button>
+            <button type="button" class="btn btn-danger">Inter Miami</button>
             <span style="margin-right: 10px;"></span>
             <button type="button" class="btn btn-danger">Empate</button>
             <span style="margin-right: 10px;"></span>
-            <button type="button" class="btn btn-danger">Equipo 2</button>
+            <button type="button" class="btn btn-danger">Pumas UNAM</button>
           </td>
 
           <td>
@@ -89,13 +89,13 @@
 
         </tr>
         <tr>
-          <td>Equipo 1 <br> Equipo 2</td>
+          <td>Manchester United <br> Santos Laguna</td>
           <td>
-            <button type="button" class="btn btn-danger">Equipo 1</button>
+            <button type="button" class="btn btn-danger">Manchester United</button>
             <span style="margin-right: 10px;"></span>
             <button type="button" class="btn btn-danger">Empate</button>
             <span style="margin-right: 10px;"></span>
-            <button type="button" class="btn btn-danger">Equipo 2</button>
+            <button type="button" class="btn btn-danger">Santos Laguna</button>
           </td>
 
           <td>
@@ -104,13 +104,13 @@
 
         </tr>
         <tr>
-          <td>Equipo 1 <br> Equipo 2</td>
+          <td>Bayern Munich <br> Tigres UANL</td>
           <td>
-            <button type="button" class="btn btn-danger">Equipo 1</button>
+            <button type="button" class="btn btn-danger">Bayern Munich</button>
             <span style="margin-right: 10px;"></span>
             <button type="button" class="btn btn-danger">Empate</button>
             <span style="margin-right: 10px;"></span>
-            <button type="button" class="btn btn-danger">Equipo 2</button>
+            <button type="button" class="btn btn-danger">Tigres UANL</button>
           </td>
 
           <td>
@@ -119,13 +119,13 @@
 
         </tr>
         <tr>
-          <td>Equipo 1 <br> Equipo 2</td>
+          <td>FC Barcelona <br> Puebla</td>
           <td>
-            <button type="button" class="btn btn-danger">Equipo 1</button>
+            <button type="button" class="btn btn-danger">FC Barcelona</button>
             <span style="margin-right: 10px;"></span>
             <button type="button" class="btn btn-danger">Empate</button>
             <span style="margin-right: 10px;"></span>
-            <button type="button" class="btn btn-danger">Equipo 2</button>
+            <button type="button" class="btn btn-danger">Puebla</button>
           </td>
 
           <td>
@@ -134,13 +134,13 @@
 
         </tr>
         <tr>
-          <td>Equipo 1 <br> Equipo 2</td>
+          <td>Boca Juniors <br> Necaxa</td>
           <td>
-            <button type="button" class="btn btn-danger">Equipo 1</button>
+            <button type="button" class="btn btn-danger">Boca Juniors</button>
             <span style="margin-right: 10px;"></span>
             <button type="button" class="btn btn-danger">Empate</button>
             <span style="margin-right: 10px;"></span>
-            <button type="button" class="btn btn-danger">Equipo 2</button>
+            <button type="button" class="btn btn-danger">Necaxa</button>
           </td>
 
           <td>
@@ -149,13 +149,13 @@
 
         </tr>
         <tr>
-          <td>Equipo 1 <br> Equipo 2</td>
+          <td>Arsenal <br> Chivas</td>
           <td>
-            <button type="button" class="btn btn-danger">Equipo 1</button>
+            <button type="button" class="btn btn-danger">Arsenal</button>
             <span style="margin-right: 10px;"></span>
             <button type="button" class="btn btn-danger">Empate</button>
             <span style="margin-right: 10px;"></span>
-            <button type="button" class="btn btn-danger">Equipo 2</button>
+            <button type="button" class="btn btn-danger">Chivas</button>
           </td>
 
           <td>
