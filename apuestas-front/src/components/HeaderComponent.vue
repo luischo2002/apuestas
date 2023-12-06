@@ -26,8 +26,6 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" @click="goPerfil" >Información Personal</a></li>
               <li><a class="dropdown-item" href="#">Modificar Perfil</a></li>
-              <li><a class="dropdown-item" href="#">Algo</a></li>
-              <li><a class="dropdown-item" href="#">Algo más</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -36,8 +34,9 @@
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Depósito</a></li>
-              <li><a class="dropdown-item" href="#">Retiro</a></li>
-              <li><a href="">ss</a></li>
+              <li><button type="button" class="btn btn-danger dropdown dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Retiro
+  </button></li>
               <!-- Button trigger modal -->
 
 
