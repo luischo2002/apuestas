@@ -1,5 +1,6 @@
 <template>
   <HeaderComponent />
+  <img alt="Vue logo" src="../assets/img/logo.png">
   <div class="container">
     <RetiroModalComponent/>
     <h2>¡Apuesta y gana!</h2>

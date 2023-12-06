@@ -24,7 +24,7 @@
               Mi perfil
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Información Personal</a></li>
+              <li><a class="dropdown-item" @click="goPerfil" >Información Personal</a></li>
               <li><a class="dropdown-item" href="#">Modificar Perfil</a></li>
               <li><a class="dropdown-item" href="#">Algo</a></li>
               <li><a class="dropdown-item" href="#">Algo más</a></li>
@@ -58,6 +58,11 @@
 <script>
     export default {
     name: 'HeaderComponent',
+    methods:{
+            goPerfil(){
+                this.$router.push('/perfil')
+            }
+        }
 }
 </script>
 
