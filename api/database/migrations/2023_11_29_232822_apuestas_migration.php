@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('apuestas', function (Blueprint $table) {
             $table->increments('id_apuesta');
-            $table->string('seleccion');
+            $table->string('equipo1');
+            $table->string('equipo2');
             $table->double('apuesta');
             $table->double('ganancia');
             $table->timestamps();

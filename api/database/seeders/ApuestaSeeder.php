@@ -15,22 +15,26 @@ class ApuestaSeeder extends Seeder
     public function run(): void
     {
         DB::table('apuestas')->insert([
-            'seleccion' => 'Inter Miami',
+            'equipo1' => 'Inter Miami',
+            'equipo2' => 'Inter Miami',
             'apuesta' => 100,
             'ganancia' => 145
         ]);
         DB::table('apuestas')->insert([
-            'seleccion' => 'New York Yankees',
+            'equipo1' => 'Inter Miami',
+            'equipo2' => 'Inter Miami',
             'apuesta' => 500,
             'ganancia' => 1200
         ]);
         DB::table('apuestas')->insert([
-            'seleccion' => 'New Orleans Saints',
+            'equipo1' => 'Inter Miami',
+            'equipo2' => 'Inter Miami',
             'apuesta' => 650,
             'ganancia' => 1000
         ]);
         DB::table('apuestas')->insert([
-            'seleccion' => 'Los Angeles Lakers',
+            'equipo1' => 'Inter Miami',
+            'equipo2' => 'Inter Miami',
             'apuesta' => 120,
             'ganancia' => 900
         ]);
