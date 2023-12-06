@@ -3,7 +3,7 @@
   <div class="container"> 
   <HeaderComponent />
     <RetiroModalComponent/>
-    <h2>Apuesta y gana</h2>
+    <h2>¡Apuesta y gana!</h2>
     <table class="table table-bordered">
       <thead>
         <tr>
@@ -201,4 +201,5 @@ li {
 a {
   color: #42b983;
 }
+
 </style>

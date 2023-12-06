@@ -80,3 +80,9 @@ export default {
     }
     
 </script>
+<style scoped>
+
+.btn.btn-primary{
+  margin-bottom:40px;
+}
+</style>
