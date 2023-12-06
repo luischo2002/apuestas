@@ -25,8 +25,6 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Información Personal</a></li>
               <li><a class="dropdown-item" href="#">Modificar Perfil</a></li>
-              <li><a class="dropdown-item" href="#">Algo</a></li>
-              <li><a class="dropdown-item" href="#">Algo más</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
