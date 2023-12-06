@@ -14,7 +14,7 @@
       </thead>
       <tbody>
         <tr>
-          <td>Equipo 1 <br> Equipo 2</td>
+          <td>Perros <br> Equipo 2</td>
           <td>
             <button type="button" class="btn btn-danger">Equipo 1</button>
             <span style="margin-right: 10px;"></span>
