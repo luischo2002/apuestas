@@ -74,14 +74,19 @@ class UserController extends Controller
             //'name' => 'required|min:3|max:255',
             //'email' => 'required|email',
             //'password' => 'required', (?
-            'balance' => 'required|max:' . User::find($id)->balance,
+            'balance' => 'required|min:0|max:' . User::find($id)->balance,
 
         ]);
-        if ($reglas->fails()) {
-            return back()->withInput()->with('errorUpdate', 'fail')->withErrors($reglas);
+        if ($reglas->fails() || $request->balance > User::find($id)->balance) {
+            return response()->json([
+                'status' => 'error',
+                'message' => 'Eres un pringado',
+                'errores' => $reglas
+            ]);
+            //return back()->withInput()->with('errorUpdate', 'fail')->withErrors($reglas);
         } else {
             $registro = User::find($request->id);
-            $registro->name = $request->name;
+            //$registro->name = $request->name;
             //            $registro->email = $request->email;
 
             $registro->balance = ($registro->balance - $request->balance);

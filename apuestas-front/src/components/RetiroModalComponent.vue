@@ -50,7 +50,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-  <button type="submit" class="btn btn-primary">Retirar</button>
+  <button @click="retirar()" class="btn btn-primary">Retirar</button>
       </div>
     </div>
   </div>
@@ -64,11 +64,14 @@ export default {
         name: 'RetiroModalComponent',
         methods:{
         retirar(){
-            axios.patch('users',{
-                balance:this.txtCantidad
+            axios.put('users/1',{
+              balance:this.txtCantidad
             }).then(res=>{
                 if(res.data.status=='success'){
                     //codigo pa pagar jeje
+                    console.log("Eres el papu de papus")
+                }else{
+                  console.log(res.data)
                 }
             });
         }
