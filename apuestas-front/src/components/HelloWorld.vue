@@ -1,5 +1,5 @@
 <template>
-  <HeaderComponent2/>
+  <HeaderComponent />
   <img alt="Vue logo" src="../assets/img/logo.png">
   <div class="container">
     <RetiroModalComponent/>
@@ -170,8 +170,7 @@
 </template>
 
 <script>
-import HeaderComponent2 from './HeaderComponent2.vue';
-//import HeaderComponent2 from './HeaderComponent2.vue';
+import HeaderComponent from './HeaderComponent.vue';
 import RetiroModalComponent from './RetiroModalComponent.vue';
 
 export default {
@@ -179,7 +178,7 @@ export default {
   props: {
     msg: String
   },
-  components: { HeaderComponent2, RetiroModalComponent }
+  components: { HeaderComponent , RetiroModalComponent }
 }
 </script>
 
