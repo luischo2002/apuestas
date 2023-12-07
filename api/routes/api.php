@@ -25,5 +25,5 @@ Route::resource('apuestas', ApuestasController::class);
 Route::resource('payment', PaymentController::class);
 Route::resource('users', UserController::class);
 
-Route::post('login', [UserController::class,'login']);
-Route::post('signin', [UserController::class,'store']);
+Route::post('login', [UserController::class, 'login']);
+Route::post('signin', [UserController::class, 'store']);

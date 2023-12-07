@@ -23,10 +23,11 @@ class UserController extends Controller
     }
 
 
-    public function login(){
-        
+    public function login()
+    {
+
         $data = User::where('email', $email)
-        ->where('password', Hash::make('password',$password))->get()->first();
+            ->where('password', Hash::make('password', $password))->get()->first();
     }
     /**
      * Show the form for creating a new resource.
@@ -41,11 +42,11 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        $data = User::create ([
-            'name'=>$request->name,
-            'email'=>$request->email,
-            'password'=>$request->password,
-            'balance'=> 0
+        $data = User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => $request->password,
+            'balance' => 0
         ]);
     }
 
@@ -88,10 +89,10 @@ class UserController extends Controller
             'balance' => 'required|min:0|max:' . User::find($id)->balance,
 
         ]);
-        if ($reglas->fails() || $request->balance > User::find($id)->balance) {
+        if ($reglas->fails() || $request->balance > User::find($id)->balance || $request->balance < 0) {
             return response()->json([
-                'status' => 'error',
-                'message' => 'Eres un pringado',
+                'status' => 'Error',
+                'message' => 'Fallo con el balance',
                 'errores' => $reglas
             ]);
             //return back()->withInput()->with('errorUpdate', 'fail')->withErrors($reglas);
@@ -146,7 +147,7 @@ class UserController extends Controller
     }
     */
 
-    
+
 
     /**
      * Remove the specified resource from storage.
@@ -155,9 +156,4 @@ class UserController extends Controller
     {
         //
     }
-
-
-
-
 }
-
