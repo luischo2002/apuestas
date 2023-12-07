@@ -186,7 +186,7 @@ export default {
                   const element = res.data.data[index];
                   //console.log(element)
                   //console.log(res.data.data)
-                  if(element.numero_tarjeta == this.txtClabe){
+                  if(element.numero_tarjeta == this.txtClabe && element.id_usuario == 1){
                     axios.get('users/1').then(resuser=>{
                   if(resuser.data.status == 'success' && resuser.data.data.name == this.txtTitular){
                     axios.put('users/1',{
@@ -215,6 +215,12 @@ export default {
                 })
                 break;
                   }
+                  this.$swal({
+                                title: 'Error',
+                                text:'Ha ocurrido un error',
+                                icon:'error',
+                                confirmButtonText:'Entendido'
+                            })
                 }
                 
               }
