@@ -41,7 +41,7 @@
   import axios from 'axios';
 
 export default {
-  name:'signin',
+  name:'SigninXd',
   data() {
     return {
       name:'',
