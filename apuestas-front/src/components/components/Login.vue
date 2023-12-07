@@ -44,16 +44,14 @@ export default {
   methods: {
     async login() {
       try {
-        const response = await axios.post('login', {
+        const response = await axios.get('login', {
           email: this.email,
           password: this.password,
         });
         console.log('Inicio de sesión exitoso:', response.data);
-
         localStorage.setItem('token', response.data.token);
-
-
         this.$router.push('/home');
+
       } catch (error) {
         this.error = !this.error
 

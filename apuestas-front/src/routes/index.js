@@ -10,7 +10,7 @@ const routes = [
     {path:'/login', name:'login',component:LoginXd},
     {path:'/signin', name:'signin',component:SigninXd},
     //{path:'/register', name:'register',component:RegisterComponent},
-    //{path:'/register', name:'register',component:RegisterComponent},
+    //{path:'/login', name:'login',component:LoginComponent},
     {path:'/home', name:'home',component:HelloWorld},
     {path:'/perfil', name:'perfil',component:PerfilInfo},
 
