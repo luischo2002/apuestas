@@ -118,11 +118,18 @@ export default {
     },
           retirar(){
               axios.put('users/1',{
+                id:1,
                 balance:this.txtCantidad
               }).then(res=>{
                   if(res.data.status=='success'){
                       //codigo pa pagar jeje
                       console.log("Eres el papu de papus")
+                      this.$swal({
+                                title: 'Error',
+                                text:'No hay nada',
+                                icon:'error',
+                                confirmButtonText:'Chido tu cotorreo'
+                            })
                   }else{
                     console.log(res.data)
                   }

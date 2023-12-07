@@ -8,7 +8,10 @@ import router from "./routes"
 import axios from 'axios';
 axios.defaults.baseURL='http://localhost:8000/api/'
 
-
+import VueSweetalert2 from 'vue-sweetalert2';
+import 'sweetalert2/dist/sweetalert2.min.css';
 createApp(App)
-.use(router)
-.mount('#app')
+    .use(router)
+    .use(VueSweetalert2)
+    .mount('#app')
+
