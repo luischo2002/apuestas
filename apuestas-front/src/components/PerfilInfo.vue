@@ -1,8 +1,19 @@
 <template>
 <HeaderComponent />
+
+
+
 <div class="d-flex justify-content-center aling-items-center vh-150 bg-danger p-4" >
         <div class='bg-white m-5 p-5 rounded-5 justify-content-center aling-items-center' style="width:23rem; height:33rem">
-            <div class='d-flex justify-content-center'>
+            
+
+            <div class="p-1">
+              <input v-on:keyup.enter="searchProduct" v-model="txtId" 
+              type="number" placeholder="Prueba para mostrar los usuarios" class="form-control">
+            </div>
+            
+            
+            <div class='d-flex justify-content-center p-2'>
                 <img src="../assets/img/defaultuser.png" alt="A" style="height: 7rem" />
             </div>
             <h1 class="text-center fw-bold p-2">Mi Perfil</h1>
@@ -32,9 +43,6 @@
                 <p></p>
                 
             </div>
-
-            <input v-on:keyup.enter="searchProduct" v-model="txtId" 
-            type="number" placeholder="Prueba para mostrar los usuarios" class="form-control">
             
         </div>
 
@@ -65,8 +73,6 @@ data() {
     }
   },
 
- //axios.get(this.url+"products/"+this.txtCodigo)
-
     methods: {
     getData() {
       axios.get(this.url+"users/").then(res => {
@@ -81,9 +87,9 @@ data() {
                         if(result.data.status == 'error'){
                             this.$swal({
                                 title: 'ERROR!',
-                                text: 'PRODUCTO NO ENCONTRADO',
+                                text: 'USUARIO NO ENCONTRADO',
                                 icon: 'error',
-                                confirmButtonText: 'Cool'
+                                confirmButtonText: 'VOLVER'
                             });
                         } else{
                             this.$swal({
