@@ -24,7 +24,7 @@
               Mi perfil
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" @click="goPerfil" >Información Personal</a></li>
+              <li><a class="dropdown-item" href="#" @click="goPerfil" >Información Personal</a></li>
               <li><a class="dropdown-item" href="#">Modificar Perfil</a></li>
             </ul>
           </li>

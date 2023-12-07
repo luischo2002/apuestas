@@ -20,6 +20,8 @@
                 class="form-control bg-ligth input-group-text">
             </div>
             <div class='d-flex ap-3 justify-content-center aling-items-center'>
+                <!-- <router-link class="btn btn-outline-danger mx-4" :to="'/register'">Registro</router-link> -->
+                <!-- Para el registro pero aun no funciona chido -->
                 <button @click="login" class="btn btn-danger">Ingresar</button>
             </div>
             <div v-if="error" class="p-3 alert alert-danger">
