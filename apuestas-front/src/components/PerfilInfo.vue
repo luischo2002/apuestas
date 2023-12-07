@@ -32,6 +32,9 @@
                 <p></p>
                 
             </div>
+
+            <input v-on:keyup.enter="searchProduct" v-model="txtId" 
+            type="number" placeholder="Prueba para mostrar los usuarios" class="form-control">
             
         </div>
 
@@ -62,15 +65,40 @@ data() {
     }
   },
 
+ //axios.get(this.url+"products/"+this.txtCodigo)
 
     methods: {
     getData() {
-      axios.get('/users').then(res => {
+      axios.get(this.url+"users/").then(res => {
         if (res.data.status == 'success') {
           this.data = res.data.data
         }
       })
-    }
+    },
+    searchProduct(){
+                if(this.txtCodigo!=""){
+                    axios.get(this.url+"users/"+this.txtId).then(result=>{
+                        if(result.data.status == 'error'){
+                            this.$swal({
+                                title: 'ERROR!',
+                                text: 'PRODUCTO NO ENCONTRADO',
+                                icon: 'error',
+                                confirmButtonText: 'Cool'
+                            });
+                        } else{
+                            this.$swal({
+                                //title: 'SUCCESS!',
+                                title: result.data.data.name,
+                                text: result.data.data.email,
+                                //text: result.data.data.balance,
+                                icon: 'success',
+                                //confirmButtonText: 'OK!',
+                                confirmButtonText: result.data.data.balance
+                            })
+                        }
+                    })
+                } 
+            },
   },
 
   mounted() {
