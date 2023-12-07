@@ -172,31 +172,64 @@ export default {
         }
       })
     },
-          retirar(){
-              axios.put('users/1',{
+    retirar(){
+            if(this.txtMetodo != null && this.txtClabe != null && this.txtNomBan !=null && this.txtTitular != null && this.txtCantidad != null ){
+              console.log(this.txtMetodo)
+              console.log(this.txtCantidad)
+              console.log(this.txtClabe)
+              console.log(this.txtNomBan)
+              console.log(this.txtTitular)
+              
+              axios.get('payment/').then(res=>{
+              if(res.data.status == 'success'){
+                for (let index = 0; index < res.data.data.length; index++) {
+                  const element = res.data.data[index];
+                  //console.log(element)
+                  //console.log(res.data.data)
+                  if(element.numero_tarjeta == this.txtClabe){
+                    axios.get('users/1').then(resuser=>{
+                  if(resuser.data.status == 'success' && resuser.data.data.name == this.txtTitular){
+                    axios.put('users/1',{
+                //id:localStorage.getItem('id'),
                 id:1,
                 balance:this.txtCantidad
-              }).then(res=>{
-                  if(res.data.status=='success'){
-                      //codigo pa pagar jeje
-                      console.log("Eres el papu de papus")
+              }).then(resupdate=>{
+                  if(resupdate.data.status=='success'){
+                      //codigo pa pagar
                       this.$swal({
-                                title: 'Retiro aceptado',
-                                text:'Tu retiro si fue aceptado',
+                                title:'Exito',
+                                text: 'El pago se va a realizar en la cuenta '+this.txtClabe+' en un lapso de 24-48 horas',
                                 icon:'success',
-                                confirmButtonText:'Retirar'
+                                confirmButtonText:'Entendido'
                             })
                   }else{
-                    console.log(res.data)
                     this.$swal({
-                                title: 'Retiro denegado',
-                                text:'Tu retiro fue denegado',
+                                title: 'Error',
+                                text:'Ha ocurrido un error durante la verificación del pago',
                                 icon:'error',
-                                confirmButtonText:'Verifica tus fondos'
+                                confirmButtonText:'Entendido'
                             })
                   }
               });
-          }, 
+                  }
+                })
+                break;
+                  }
+                }
+                
+              }
+            })
+            }else{
+              this.$swal({
+                                title: 'Error',
+                                text:'No se ha rellenado la información necesaria para validar el pago',
+                                icon:'error',
+                                confirmButtonText:'Entendido'
+                            })
+            }
+            
+              
+          },
 
           /*
           deposito(){
