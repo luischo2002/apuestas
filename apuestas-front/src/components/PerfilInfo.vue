@@ -6,15 +6,20 @@
                 <img src="../assets/img/defaultuser.png" alt="A" style="height: 7rem" />
             </div>
             <h1 class="text-center fw-bold p-2">Mi Perfil</h1>
-            <div class="p-1">
+            <div class="p-1" v-for="p in data" v-bind:key="p.id">
                 <label for="">Nombre:</label>
-                <p>Administrador</p>
+                <p></p>
+                <label>{{ p.name }}</label>
+                <p></p>
             </div>
-            <div class="p-1">
-                <label for="">Correo electronico:</label>
-                <p>admin</p>
 
+            <div class="p-1" v-for="p in data" v-bind:key="p.id">
+                <label for="">Correo electronico:</label>
+                <p></p>
+                <label>{{ p.email }}</label>
+                <p></p>
             </div>
+
             <div class="p-1">
                 <label for="">Num. Tarjeta:</label>
                 <p>123456789</p>
@@ -22,7 +27,7 @@
             </div>
             <div class="p-1">
                 <label for="">Total de fondos:</label>
-                <p>$1000.00</p>
+                <p>$100.00</p>
                 
             </div>
             
@@ -34,6 +39,7 @@
 <script>
 
 import HeaderComponent from './HeaderComponent.vue';
+import axios from 'axios'
 
 
 export default {
@@ -46,6 +52,28 @@ export default {
     HeaderComponent,
     },
 
+data() {
+    return {
+      data: [],
+      url: "http://localhost:8000/api/",
+
+    }
+  },
+
+
+    methods: {
+    getData() {
+      axios.get('/users').then(res => {
+        if (res.data.status == 'success') {
+          this.data = res.data.data
+        }
+      })
+    }
+  },
+
+  mounted() {
+    this.getData()
+  }
   }
 </script>
 
