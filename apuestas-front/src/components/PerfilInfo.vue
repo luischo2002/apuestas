@@ -1,24 +1,28 @@
 <template>
 <HeaderComponent />
 <div class="d-flex justify-content-center aling-items-center vh-150 bg-danger p-4" >
-        <div class='bg-white m-5 p-5 rounded-5 justify-content-center aling-items-center' style="width:23rem; height:32rem">
+        <div class='bg-white m-5 p-5 rounded-5 justify-content-center aling-items-center' style="width:23rem; height:33rem">
             <div class='d-flex justify-content-center'>
                 <img src="../assets/img/defaultuser.png" alt="A" style="height: 7rem" />
             </div>
-            <h1 class="text-center fw-bold p-3">Mi Perfil</h1>
-            <div class="p-2">
+            <h1 class="text-center fw-bold p-2">Mi Perfil</h1>
+            <div class="p-1">
                 <label for="">Nombre:</label>
                 <p>Administrador</p>
-
             </div>
-            <div class="p-2">
+            <div class="p-1">
                 <label for="">Correo electronico:</label>
                 <p>admin</p>
 
             </div>
-            <div class="p-2">
+            <div class="p-1">
                 <label for="">Num. Tarjeta:</label>
                 <p>123456789</p>
+                
+            </div>
+            <div class="p-1">
+                <label for="">Total de fondos:</label>
+                <p>$1000.00</p>
                 
             </div>
             
@@ -31,14 +35,17 @@
 
 import HeaderComponent from './HeaderComponent.vue';
 
+
 export default {
   name: 'PerfilInfo',
   props: {
     msg: String
   },
-  components: { 
+
+    components: { 
     HeaderComponent,
-    }
+    },
+
   }
 </script>
 
