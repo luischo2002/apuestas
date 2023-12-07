@@ -25,9 +25,11 @@
                 <p>123456789</p>
                 
             </div>
-            <div class="p-1">
+            <div class="p-1" v-for="p in data" v-bind:key="p.id">
                 <label for="">Total de fondos:</label>
-                <p>$100.00</p>
+                <p></p>
+                <label>${{ p.balance }}.00</label>
+                <p></p>
                 
             </div>
             
