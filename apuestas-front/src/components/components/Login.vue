@@ -9,7 +9,7 @@
             <label for="">Correo electronico</label>
             <input style="border:none; border-bottom: 2px black solid;border-radius:5;
             border-top-left-radius:10px;border-top-right-radius:10px;" 
-            v-on:keyup="error=false" v-model="username" type="email" 
+            v-on:keyup="error=false" v-model="email" type="email" 
             class="form-control bg-ligth input-group-text">
         </div>
         <div class="p-3">
@@ -34,17 +34,18 @@
 import axios from 'axios';
 
 export default {
+  name:'login',
   data() {
     return {
-      username: '',
+      email: '',
       password: '',
     };
   },
   methods: {
     async login() {
       try {
-        const response = await axios.post('/api/database/seeders/UsersSeeder.php', {
-          email: this.username,
+        const response = await axios.post('login', {
+          email: this.email,
           password: this.password,
         });
         console.log('Inicio de sesión exitoso:', response.data);
@@ -52,9 +53,9 @@ export default {
         localStorage.setItem('token', response.data.token);
 
 
-        this.$router.push('/HelloWorld.vue');
+        this.$router.push('/home');
       } catch (error) {
-        console.error('Error de inicio de sesión:', error);
+        this.error = !this.error
 
       }
     },

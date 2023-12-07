@@ -22,6 +22,12 @@ class UserController extends Controller
         ]);
     }
 
+
+    public function login(){
+        
+        $data = User::where('email', $email)
+        ->where('password', Hash::make('password',$password))->get()->first();
+    }
     /**
      * Show the form for creating a new resource.
      */
@@ -35,7 +41,12 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = User::create ([
+            'name'=>$request->name,
+            'email'=>$request->email,
+            'password'=>$request->password,
+            'balance'=> 0
+        ]);
     }
 
     /**

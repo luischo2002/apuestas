@@ -24,3 +24,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::resource('apuestas', ApuestasController::class);
 Route::resource('payment', PaymentController::class);
 Route::resource('users', UserController::class);
+
+Route::post('login', [UserController::class,'login']);
+Route::post('signin', [UserController::class,'store']);

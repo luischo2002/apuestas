@@ -41,6 +41,7 @@
   import axios from 'axios';
 
 export default {
+  name:'signin',
   data() {
     return {
       name:'',
@@ -51,8 +52,8 @@ export default {
   methods: {
     async signUp() {
       try {
-        const response = await axios.post('api/database/migration/users',{
-          name: this.username,
+        const response = await axios.post('signin',{
+          name: this.name,
           email: this.email,
           password: this.password,
         });
@@ -61,7 +62,7 @@ export default {
         console.log('Usuario creado con éxito:', response.data);
 
      
-        this.$router.push('/login.vue');
+        this.$router.push('/Login.vue');
       } catch (error) {
         console.error('Error al crear el usuario:', error);
 
