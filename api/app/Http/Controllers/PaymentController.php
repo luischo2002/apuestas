@@ -55,7 +55,7 @@ class PaymentController extends Controller
 
     public function show(string $id)
     {
-        $data = Payment::where('id_payment', $id)->get()->first();
+        $data = Payment::where('id_usuario', $id)->get()->first();
         if ($data) {
             return response()->json([
                 'status' => 'success',
