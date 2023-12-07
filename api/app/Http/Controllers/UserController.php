@@ -100,6 +100,43 @@ class UserController extends Controller
         }
     }
 
+
+    /*
+    public function updatenew(Request $request, string $id)
+    {
+        $reglas = Validator::make($request->all(), [
+            //'name' => 'required|min:3|max:255',
+            //'email' => 'required|email',
+            //'password' => 'required', (?
+            'balance' => 'required|min:0|max:' . User::find($id)->balance,
+
+        ]);
+        if ($reglas->fails() || $request->balance > User::find($id)->balance) {
+            return response()->json([
+                'status' => 'error',
+                'message' => 'Eres un pringado',
+                'errores' => $reglas
+            ]);
+            //return back()->withInput()->with('errorUpdate', 'fail')->withErrors($reglas);
+        } else {
+            $registro = User::find($request->id);
+            //$registro->name = $request->name;
+            //            $registro->email = $request->email;
+
+            $registro->balance = ($registro->balance + $request->balance);
+
+
+            $registro->save();
+            return response()->json([
+                'status' => 'success',
+                'message' => 'Datos actualizados'
+            ]);
+        }
+    }
+    */
+
+    
+
     /**
      * Remove the specified resource from storage.
      */

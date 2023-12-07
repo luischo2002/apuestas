@@ -33,7 +33,11 @@
             Transacciones
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Depósito</a></li>
+            
+              <li><button type="button" class="btn btn-danger dropdown dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+    Depósito
+  </button></li>
+
               <li><button type="button" class="btn btn-danger dropdown dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
     Retiro
   </button></li>
